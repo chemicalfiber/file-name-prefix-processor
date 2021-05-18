@@ -11,6 +11,10 @@ java -jar (你下载的JAR包的名字)
 ```
 - 根据窗口中对应的提示操作即可
 
+> 如果你是在Gitee看到这个项目，请你前往GitHub下载Release的Jar包<br>
+> 因为我不想实名认证<br>
+> Gitee, U ARE A PURE GIT！
+
 > 当你想处理Downie下载的文件的文件名时请注意，你只需要复制重复的前缀部分！
 > 
 > 即：源文件名为「xxxx - 001 - file1.mp4」、「xxxx - 002 - file2.mp4」「xxxx - 003 - file3.mp4」...时，你只需要复制前面的「xxxx」即可，后面的交给程序吧！
