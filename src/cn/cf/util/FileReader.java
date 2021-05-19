@@ -27,6 +27,12 @@ public class FileReader {
                 fileListArray.add(fs);
             }
         }
+        // 检查有没有指定前缀的文件
+        if (fileListArray.size()==0){
+            System.out.println("找不到文件名以【" + prefix +"】开头的文件！即将退出...");
+            System.out.println("Cannot find the file whose name starts with 【" + prefix + "】, exiting...");
+            System.exit(0);
+        }
         File[] fileList = new File[fileListArray.size()];
         for (int i = 0; i < fileList.length; i++) {
             fileList[i] = fileListArray.get(i);

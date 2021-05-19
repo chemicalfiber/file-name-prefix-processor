@@ -6,11 +6,6 @@ public class PrefixProcessor {
     // Downie处理
     public static void downiePrefixProcess(String folderPath, String prefix){
         File[] fileList = FileReader.readFiles(folderPath, prefix);
-        /*
-        for (File fs:fileList) {
-            System.out.println(fs.getName());
-        }
-        */
         // 获取前缀长度
         int length = prefix.length();
         for (File file : fileList) {
@@ -37,12 +32,12 @@ public class PrefixProcessor {
     }
     static void done(){
         System.out.println(
-            "██████╗  ██████╗ ███╗   ██╗███████╗    ██╗\n" +
-            "██╔══██╗██╔═══██╗████╗  ██║██╔════╝    ██║\n" +
-            "██║  ██║██║   ██║██╔██╗ ██║█████╗      ██║\n" +
-            "██║  ██║██║   ██║██║╚██╗██║██╔══╝      ╚═╝\n" +
-            "██████╔╝╚██████╔╝██║ ╚████║███████╗    ██╗\n" +
-            "╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚══════╝    ╚═╝"
+            "██████╗    ██████╗   ███╗   ██╗  ███████╗    ██╗\n" +
+            "██╔══██╗  ██╔═══██╗  ████╗  ██║  ██╔════╝    ██║\n" +
+            "██║  ██║  ██║   ██║  ██╔██╗ ██║  █████╗      ██║\n" +
+            "██║  ██║  ██║   ██║  ██║╚██╗██║  ██╔══╝      ╚═╝\n" +
+            "██████╔╝  ╚██████╔╝  ██║ ╚████║  ███████╗    ██╗\n" +
+            "╚═════╝    ╚═════╝   ╚═╝  ╚═══╝  ╚══════╝    ╚═╝"
         );
     }
 }
