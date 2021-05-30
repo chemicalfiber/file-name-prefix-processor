@@ -1,11 +1,12 @@
 package cn.cf.util;
 
 import java.io.File;
+import java.util.ArrayList;
 
 public class PrefixProcessor {
     // Downie处理
     public static void downiePrefixProcess(String folderPath, String prefix){
-        File[] fileList = FileReader.readFiles(folderPath, prefix);
+        ArrayList<File> fileList = FileReader.readFiles(folderPath, prefix);
         // 获取前缀长度
         int length = prefix.length();
         for (File file : fileList) {
@@ -19,7 +20,7 @@ public class PrefixProcessor {
     }
     // 未指定，一般处理
     public static void commonProcess(String folderPath, String prefix){
-        File[] fileList = FileReader.readFiles(folderPath, prefix);
+        ArrayList<File> fileList = FileReader.readFiles(folderPath, prefix);
         // 获取前缀长度
         int length = prefix.length();
         for (File file : fileList) {

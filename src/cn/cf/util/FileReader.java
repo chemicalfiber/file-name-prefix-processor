@@ -13,7 +13,7 @@ public class FileReader {
             System.exit(0);
         }
     }
-    public static File[] readFiles(String folderPath, String prefix){
+    public static ArrayList<File> readFiles(String folderPath, String prefix){
         File f = new File(folderPath);
         File[] filesInDirectory = f.listFiles();
         // 创建存放文件的列表
@@ -33,10 +33,6 @@ public class FileReader {
             System.out.println("Cannot find the file whose name starts with 【" + prefix + "】, exiting...");
             System.exit(0);
         }
-        File[] fileList = new File[fileListArray.size()];
-        for (int i = 0; i < fileList.length; i++) {
-            fileList[i] = fileListArray.get(i);
-        }
-        return fileList;
+        return fileListArray;
     }
 }
