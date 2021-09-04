@@ -8,8 +8,13 @@ public class FileReader {
     public static void check(String folderPath){
         File f = new File(folderPath);
         if (!f.exists()) {
-            System.out.println("目录【" + folderPath + "】不存在！");
+            System.out.println("路径【" + folderPath + "】不存在！");
             System.out.println("Path【" + folderPath + "】does not exist!");
+            System.exit(0);
+        }
+        if (!f.isDirectory()){
+            System.out.println("路径【" + folderPath + "】不是文件夹！");
+            System.out.println("Path【" + folderPath + "】isn't a directory!");
             System.exit(0);
         }
     }
@@ -21,7 +26,7 @@ public class FileReader {
         // 遍历并添加需要的文件到待处理列表
         for (File fs : Objects.requireNonNull(filesInDirectory)) {
             if (fs.isDirectory()) {
-                System.out.println(fs.getName() + " （是目录，不支持重命名；Is a directory, doesn't support renaming ）");
+                System.out.println(fs.getName() + "（是目录，不支持重命名；\n" + fs.getName() + "Is a directory, doesn't support renaming!）");
             } else if (fs.getName().startsWith(prefix)) {
                 System.out.println("找到文件（Found File）：" + fs.getName());
                 fileListArray.add(fs);

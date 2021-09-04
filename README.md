@@ -32,8 +32,16 @@ fork本项目，加入您的代码片段后提交pull request即可
 TODO：
 - [ ] 添加GUI实现
 - [ ] 用Windows CMD脚本语言重写
-- [ ] 用GoLang重写，实现无JVM跨平台
+- [ ] ~~用GoLang重写，实现无JVM跨平台~~，已经有人实现了，参考兄弟项目
 - [ ] 添加更多预定义的前缀处理规则
+
+## 兄弟项目：
+
+本工具的其他语言版本：
+
+GoLang：https://github.com/GreatRunoob/Grocery-store/tree/main/filename-prefix-processor-go
+
+Python：https://github.com/GreatRunoob/Grocery-store/tree/main/filename-prefix-processor-py
 
 ## 注意事项：
 - 项目代码文件中含有部分注释和调试输出语句，如果您觉得其无用，可以将其删除
