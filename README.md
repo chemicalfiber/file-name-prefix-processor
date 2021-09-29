@@ -30,8 +30,8 @@ java -jar (你下载的JAR包的名字)
 fork本项目，加入您的代码片段后提交pull request即可
 
 TODO：
-- [ ] 添加GUI实现
-- [ ] 用Windows CMD脚本语言重写
+- [X] [添加GUI实现](https://github.com/chemicalfiber/file-name-prefix-processor-GUI)
+- [ ] ~~用Windows CMD脚本语言重写~~(非必要项目)
 - [ ] ~~用GoLang重写，实现无JVM跨平台~~，已经有人实现了，参考兄弟项目
 - [ ] 添加更多预定义的前缀处理规则
 
